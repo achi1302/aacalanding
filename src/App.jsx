@@ -1,8 +1,18 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Inicio from './components/Inicio'
 
-const App = () => {
+
+export const App = () => {
+
   return (
-    <div className='text-3xl font-bold text-aaca-green underline'>Hello Wolrd!</div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Inicio />} />
+      </Routes>
+    </Router>
   )
 }
 
