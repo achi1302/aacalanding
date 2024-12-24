@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Inicio from './components/Inicio'
 import Contacto from './components/Contacto'
+import Servicios from './components/Servicios'
 
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
       <Routes>
         <Route path='/' element={<Inicio />} />
         <Route path='/contacto' element={<Contacto />} />
+        <Route path='/servicios' element={<Servicios />} />
       </Routes>
       <Footer />
     </Router>

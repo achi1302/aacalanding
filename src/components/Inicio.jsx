@@ -203,7 +203,7 @@ const Inicio = () => {
                     felis interdum euismod posuere, risus aenean. Effictur consectetur neque nostra interdum
                     congue himenaeos libero. Cubilia luctus morbi cubilia non pharetra id eget phar.
                 </p>
-                <Link to="/">
+                <Link to="/contacto">
                     <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
                     CONTÁCTO
                     </button>
