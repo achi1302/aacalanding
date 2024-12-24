@@ -8,8 +8,9 @@ import filtrocabina from "../assets/filtrocabina.jpg"
 import valvulascontrol from "../assets/valvulascontrol.jpg"
 import abanicosauxiliares from "../assets/abanicosauxiliares.jpg"
 import resistencia from "../assets/resistencias.jpg"
-
-
+import serviciosac from "../assets/serviciosac.jpg"
+import mangeras from "../assets/fabricaciondemangeras.jpg"
+import baleros from "../assets/baleros.jpg"
 
 
 const Servicios = () => {
@@ -47,7 +48,7 @@ const Servicios = () => {
         </div>
 
         {/* Grid Section */}
-        <div className="p-10 flex flex-col items-center">
+        <div className="p-12 flex flex-col items-center">
             {/* Header */}
             <div className="text-center mb-6">
                 <p className="text-aaca-green font-medium text-xl">NUESTROS SERVICIOS</p>
@@ -58,7 +59,7 @@ const Servicios = () => {
                 {servicios.map((servicio, index) => (
                     <div
                         key={index}
-                        className="border rounded-lg shadow-sm flex flex-col items-center justify-center p-3 w-[200px]"
+                        className="border rounded-lg shadow-sm flex flex-col items-center justify-center p-3 w-[200px] transform transition-transform duration-500 hover:scale-110"
                     >
                         <img
                             src={servicio.image}
@@ -71,6 +72,61 @@ const Servicios = () => {
                     </div>
                 ))}
             </div> 
+        </div>
+
+        {/* Servicios y Reparaciones */}
+        <div className="bg-aaca-medium-gray py-16">
+            {/* Title */}
+            <div className="text-center mb-10">
+                <h2 className="text-aaca-blue font-bold text-5xl">SERVICIOS Y REPARACIONES</h2>
+            </div>
+
+            {/* Grid */}
+            <div className="max-w-7xl mx-auto">
+                {/* First Row */}
+                <div className="flex justify-center gap-12 mb-12">
+                    <div 
+                        className="relative h-80 w-[535px] rounded-2xl overflow-hidden transform transition-transform duration-500 hover:scale-105" 
+                        style={{backgroundImage: `url(${serviciosac})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'}}
+                    >
+                        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <p className="text-white font-bold text-4xl text-center">
+                                SERVICIOS DE AIRE ACONDICIONADO
+                            </p>
+                        </div>
+                    </div>
+                    <div 
+                        className="relative h-80 w-[535px] rounded-2xl overflow-hidden transform transition-transform duration-500 hover:scale-105" 
+                        style={{backgroundImage: `url(${mangeras})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'}}
+                    >
+                        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <p className="text-white font-bold text-4xl text-center">
+                                FABRICACIONES DE MANGUERAS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Second Row */}
+                <div className="flex justify-center">
+                    <div 
+                        className="relative h-80 w-[535px] rounded-2xl overflow-hidden transform transition-transform duration-500 hover:scale-105" 
+                        style={{backgroundImage: `url(${baleros})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'}}
+                    >
+                        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <p className="text-white font-bold text-4xl text-center">
+                                CAMBIOS DE BALEROS/COMPRESOR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )
