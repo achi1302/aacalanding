@@ -155,7 +155,7 @@ const Inicio = () => {
         </div>
 
         {/* Nosotros Section */}
-        <div className="flex items-center justify-center bg-aaca-medium-gray py-16 px-8">
+        <div id="nosotros" className="flex items-center justify-center bg-aaca-medium-gray py-16 px-8">
             <div className="flex flex-col md:flex-row items-center md:items-start bg-white shadow-lg rounded-lg w-full max-w-5xl">
                 
                 {/* Backgrounds */}

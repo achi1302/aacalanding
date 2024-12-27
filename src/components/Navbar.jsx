@@ -10,6 +10,19 @@ const Navbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen)
     }
 
+    const handleNavClick = (href) => {
+        if (href.startsWith("#")) {
+          const sectionId = href.substring(1) // Remove `#` to get the ID
+          const section = document.getElementById(sectionId);
+    
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+    
+        setMobileDrawerOpen(false); // Close the mobile drawer
+      }
+
   return (
     <nav className="sticky top-0 z-50 py-5 bg-white shadow-md">
         <div className="container px-4 mx-auto relative text-base ">
@@ -25,7 +38,7 @@ const Navbar = () => {
                            <a
                                 href={item.href}
                                 className="hover:text-aaca-green"
-                                onClick={() => setMobileDrawerOpen(false)}
+                                onClick={() => handleNavClick(item.href)}
                             >
                                 {item.label}
                            </a>
@@ -46,7 +59,7 @@ const Navbar = () => {
                                 <a
                                     href={item.href}
                                     className="hover:text-aaca-green"
-                                    onClick={toggleNavbar}
+                                    onClick={() => handleNavClick(item.href)}
                                 >
                                     {item.label}
                                 </a>
