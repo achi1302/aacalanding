@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import {User, Wifi, Puzzle, Wrench, CarFront} from "lucide-react"
-import { Link } from "react-router-dom"
 import car from "../assets/bmw.jpg"
 import truck from "../assets/truck.jpg"
 import tractor from "../assets/tractor.jpg"
@@ -113,41 +112,28 @@ const Inicio = () => {
 
             {/* Middle Section */}
             <div className="relative flex flex-wrap justify-center items-center gap-8 w-full">
-
-                {/* Left Lines*/}
-                <div className="absolute left-0 flex items-center justify-center h-full">
-                    <svg className="h-32 text-aaca-blue" viewBox="0 0 20 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 0C15.5228 20 15.5228 80 10 100" stroke="currentColor" strokeWidth="2" />
-                    </svg>
-                </div>
-                
-                {/* Right Line */}
-                <div className="absolute right-0 flex items-center justify-center h-full">
-                    <svg className="h-32 text-aaca-blue" viewBox="0 0 20 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 0C15.5228 20 15.5228 80 10 100" stroke="currentColor" strokeWidth="2" />
-                    </svg>
-                </div>
-                
                 {/* Boxes */}
-                <div className="flex flex-wrap justify-center gap-8 relative z-10">
-                    {/* Partes */}
-                    <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
-                        <Puzzle size={75} className="text-aaca-blue mb-4" />
-                        <h3 className="text-aaca-blue text-4xl font-bold mb-2">Partes</h3>
-                    </div>
+                <a href="/servicios">
+                    <div className="flex flex-wrap justify-center gap-8 relative z-10">
+                        {/* Partes */}
+                        <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
+                            <Puzzle size={75} className="text-aaca-blue mb-4" />
+                            <h3 className="text-aaca-blue text-4xl font-bold mb-2">Partes</h3>
+                        </div>
 
-                    {/* Servicios */}
-                    <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
-                        <Wrench size={75} className="text-aaca-blue mb-4" />
-                        <h3 className="text-aaca-blue text-4xl font-bold mb-2">Servicios</h3>
-                    </div>
+                        {/* Servicios */}
+                        <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
+                            <Wrench size={75} className="text-aaca-blue mb-4" />
+                            <h3 className="text-aaca-blue text-4xl font-bold mb-2">Servicios</h3>
+                        </div>
 
-                    {/* Reparaciones */}
-                    <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
-                        <CarFront size={75} className="text-aaca-blue mb-4" />
-                        <h3 className="text-aaca-blue text-4xl font-bold mb-2">Reparaciones</h3>
+                        {/* Reparaciones */}
+                        <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
+                            <CarFront size={75} className="text-aaca-blue mb-4" />
+                            <h3 className="text-aaca-blue text-4xl font-bold mb-2">Reparaciones</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             {/* Bottom Text */}
@@ -161,9 +147,11 @@ const Inicio = () => {
             </div>
 
             {/* Button */}
-            <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
-                SERVICIOS
-            </button>
+            <a href="/servicios">
+                <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
+                    SERVICIOS
+                </button>
+            </a>
         </div>
 
         {/* Nosotros Section */}
@@ -193,9 +181,9 @@ const Inicio = () => {
         </div>
 
         {/* Contacto Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between bg-white py-16 px-60 outline">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-white pt-16 px-60">
             {/* Text */}
-            <div className="w-full md:w-1/2 mb-8 md:mb-0 items-center outline">
+            <div className="w-full md:w-1/2 mb-8 md:mb-0 items-center">
                 <p className="text-aaca-green text-lg uppercase font-medium mb-2">Contácto</p>
                 <h2 className="text-aaca-blue text-5xl font-bold leading-tight mb-4">LOREM IPSUM DOLOR AMET, CO</h2>
                 <p className="text-black font-normal mb-6">
@@ -203,11 +191,11 @@ const Inicio = () => {
                     felis interdum euismod posuere, risus aenean. Effictur consectetur neque nostra interdum
                     congue himenaeos libero. Cubilia luctus morbi cubilia non pharetra id eget phar.
                 </p>
-                <Link to="/contacto">
+                <a href="/contacto">
                     <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
-                    CONTÁCTO
+                        CONTÁCTO
                     </button>
-                </Link>
+                </a>
             </div>
 
             {/* Icons */}    

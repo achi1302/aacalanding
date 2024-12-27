@@ -26,7 +26,7 @@ const Contacto =() => {
         </div>
 
         {/* Contacto Section */}
-        <div className="container mx-auto px-4 py-10">
+        <div className="container mx-auto px-4 pt-10">
             <h2 className="text-5xl font-bold text-center text-aaca-blue mb-10">CONTÁCTANOS</h2>
 
             {/* MAIN */}

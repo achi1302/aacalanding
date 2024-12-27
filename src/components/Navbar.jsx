@@ -2,7 +2,6 @@ import {Menu, X} from "lucide-react"
 import logo from "../assets/aacalogo.jpg"
 import { navItems } from "../constants/index"
 import { useState } from "react"
-import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
@@ -16,20 +15,20 @@ const Navbar = () => {
         <div className="container px-4 mx-auto relative text-base ">
             <div className="flex justify-between items-center ">
                 <div className="flex items-center flex-shrink-0 ">
-                    <Link to="/">
+                    <a href="/">
                         <img className="h-20 w-64" src={logo} alt="logo" />
-                    </Link>
+                    </a>
                 </div>
                 <ul className="hidden lg:flex ml-40 space-x-20 font-bold text-aaca-blue ">
                     {navItems.map((item, index) => (
                         <li key={index}>
-                           <Link
-                                to={item.href}
+                           <a
+                                href={item.href}
                                 className="hover:text-aaca-green"
                                 onClick={() => setMobileDrawerOpen(false)}
                             >
                                 {item.label}
-                           </Link>
+                           </a>
                         </li>
                     ))}
                 </ul>
@@ -44,13 +43,13 @@ const Navbar = () => {
                     <ul>
                         {navItems.map((item, index)=> ( 
                             <li key={index} className="py-2 text-aaca-blue font-bold">
-                                <Link
-                                    to={item.href}
+                                <a
+                                    href={item.href}
                                     className="hover:text-aaca-green"
                                     onClick={toggleNavbar}
                                 >
                                     {item.label}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>
