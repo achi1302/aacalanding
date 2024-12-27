@@ -28,6 +28,24 @@ const Servicios = () => {
         {name: "RESISTENCIAS", image: resistencia},
     ]
 
+    const serviciosReparaciones = [
+        {
+            image: [serviciosac], 
+            title: "SERVICIOS DE AIRE ACONDICIONADO",
+            description: "Descripción adicional sobre el servicio."
+        },
+        {
+            image: [mangeras], 
+            title: "FABRICACIONES DE MANGUERAS",
+            description: "Descripción adicional sobre el servicio."
+        },
+        {
+            image: [baleros], 
+            title: "CAMBIOS DE BALÉROS/COMPRESOR",
+            description: "Descripción adicional sobre el servicio."
+        }
+    ]
+
   return (
     <div>
         {/* Banner */}
@@ -83,48 +101,40 @@ const Servicios = () => {
 
             {/* Grid */}
             <div className="max-w-7xl mx-auto">
-                {/* First Row */}
-                <div className="flex justify-center gap-12 mb-12">
-                    <div 
-                        className="relative h-80 w-[535px] rounded-2xl overflow-hidden transform transition-transform duration-500 hover:scale-105" 
-                        style={{backgroundImage: `url(${serviciosac})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'}}
-                    >
-                        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <p className="text-white font-bold text-4xl text-center">
-                                SERVICIOS DE AIRE ACONDICIONADO
-                            </p>
-                        </div>
-                    </div>
-                    <div 
-                        className="relative h-80 w-[535px] rounded-2xl overflow-hidden transform transition-transform duration-500 hover:scale-105" 
-                        style={{backgroundImage: `url(${mangeras})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'}}
-                    >
-                        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <p className="text-white font-bold text-4xl text-center">
-                                FABRICACIONES DE MANGUERAS
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <div className="flex flex-wrap justify-center gap-12">
+                    {serviciosReparaciones.map((servicio, index) => (
+                        <div
+                            key={index}
+                            className="relative h-80 w-[535px] rounded-2xl overflow-hidden group"
+                            style={{
+                                backgroundImage: `url(${servicio.image})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            }}
+                        >
+                            {/* Visible */}
+                            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                                <h3 className="text-white font-bold text-4xl text-center">
+                                    {servicio.title}
+                                </h3>
+                            </div>
 
-                {/* Second Row */}
-                <div className="flex justify-center">
-                    <div 
-                        className="relative h-80 w-[535px] rounded-2xl overflow-hidden transform transition-transform duration-500 hover:scale-105" 
-                        style={{backgroundImage: `url(${baleros})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'}}
-                    >
-                        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <p className="text-white font-bold text-4xl text-center">
-                                CAMBIOS DE BALEROS/COMPRESOR
-                            </p>
+                            {/* Hover */}
+                            <div className="absolute inset-0 bg-white bg-opacity-0 flex items-start justify-start p-6 transition-all duration-500 group-hover:bg-opacity-100">
+                                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <h3 className="text-black font-bold text-2xl mb-2">
+                                        {servicio.title}
+                                    </h3>
+                                    {servicio.description && (
+                                        <p className="text-black text-xl">
+                                            {servicio.description}
+                                        </p>
+                                    )}
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    ))} 
                 </div>
             </div>
         </div>
