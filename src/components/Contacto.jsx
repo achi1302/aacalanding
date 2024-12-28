@@ -16,10 +16,10 @@ const Contacto =() => {
             ></div>
             {/* Content */}
             <div className="relative z-10 text-center flex flex-col items-center justify-center h-full">
-                <p className="text-white font-bold text-2xl">
+                <p className="hidden md:block text-white font-bold text-lg md:text-xl lg:text-2xl">
                     Auto | Tractocamión | Maquinaria Agrícola
                 </p>
-                <p className="text-white font-bold text-5xl mt-4">
+                <p className="text-white font-bold text-3xl md:text-4xl lg:text-5xl mt-4">
                     AUTO AIRE CALIFORNIA
                 </p>
             </div>
@@ -72,7 +72,7 @@ const Contacto =() => {
                             >
                                 ENVIAR
                             </button>
-                            <p className="text-center font-bold text-xl w-80 mr-24 transform transition-transform duration-500 hover:scale-110">
+                            <p className="text-center font-bold text-base md:text-lg lg:text-xl w-80 mr-6 md:mr-20 lg:mr-20 transform transition-transform duration-500 hover:scale-110">
                                 ¡Nos puede contactar por teléfono, correo o whatsapp!
                             </p>
                         </div>
@@ -81,7 +81,7 @@ const Contacto =() => {
             </div>
 
             {/* Contact Info */}
-            <div className="mt-10 flex flex-col lg:flex-row justify-center  gap-[480px]">
+            <div className="mt-10 flex flex-col lg:flex-row justify-center md:gap-[50px] lg:gap-[500px] hidden md:flex">
                 <div className="flex flex-col items-center gap-2">
                     <a 
                         href="https://www.google.com/maps?q=Calle+de+la+Industria+%23218-B,+Col.+Industrial,+C.P.+21010,+Mexicali,+B.C."
