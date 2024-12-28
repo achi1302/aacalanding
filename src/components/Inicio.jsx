@@ -141,17 +141,19 @@ const Inicio = () => {
                 <h2 className="text-aaca-blue text-5xl font-bold">
                     LOREM IPSUM DOLOR SIT EMET, CONSECTETUR ADIPISCING ELIT, SED
                 </h2>
-                <p className="text-aaca-green text-lg font-medium mt-2">
+                <p className="text-aaca-green text-lg font-medium mt-2 mb-10">
                     Conoce nuestro portafolio y pongámonos en contacto para encontrar la solución ideal hecha a tu medida.
                 </p>
+
+                {/* Button */}
+                <a href="/servicios">
+                    <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
+                        SERVICIOS
+                    </button>
+                </a>
             </div>
 
-            {/* Button */}
-            <a href="/servicios">
-                <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
-                    SERVICIOS
-                </button>
-            </a>
+           
         </div>
 
         {/* Nosotros Section */}
@@ -184,7 +186,7 @@ const Inicio = () => {
         <div className="flex flex-col md:flex-row items-center justify-between bg-white pt-16 px-60">
             {/* Text */}
             <div className="w-full md:w-1/2 mb-8 md:mb-0 items-center">
-                <p className="text-aaca-green text-lg uppercase font-medium mb-2">Contácto</p>
+                <p className="text-aaca-green text-lg uppercase font-medium mb-2">Contacto</p>
                 <h2 className="text-aaca-blue text-5xl font-bold leading-tight mb-4">LOREM IPSUM DOLOR AMET, CO</h2>
                 <p className="text-black font-normal mb-6">
                     Lorem ipsum odor amet, consectetur adipiscing elit. Imperdiet curabitur consequat risus
@@ -193,7 +195,7 @@ const Inicio = () => {
                 </p>
                 <a href="/contacto">
                     <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
-                        CONTÁCTO
+                        CONTACTO
                     </button>
                 </a>
             </div>
