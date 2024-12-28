@@ -59,7 +59,7 @@ const Servicios = () => {
                 ></div>
                 {/* Content */}
                 <div className="relative z-10 text-center flex flex-col items-center justify-center h-full">
-                    <p className="text-white font-bold text-5xl mt-4">
+                    <p className="text-white font-bold text-3xl md:text-4xl lg:text-5xl mt-4">
                         SERVICIOS
                     </p>
                 </div>
@@ -69,15 +69,15 @@ const Servicios = () => {
         <div className="p-12 flex flex-col items-center">
             {/* Header */}
             <div className="text-center mb-6">
-                <p className="text-aaca-green font-medium text-xl">NUESTROS SERVICIOS</p>
-                <h2 className="text-aaca-blue font-bold text-5xl">REFACCIONES</h2>
+                <p className="text-aaca-green font-medium text-lg md:text-xl lg:text-xl">NUESTROS SERVICIOS</p>
+                <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">REFACCIONES</h2>
             </div>
             {/* Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10 max-w-[1125px]">
                 {servicios.map((servicio, index) => (
                     <div
                         key={index}
-                        className="border rounded-lg shadow-sm flex flex-col items-center justify-center p-3 w-[200px] transform transition-transform duration-500 hover:scale-110"
+                        className="border rounded-lg shadow-sm flex flex-col items-center justify-center p-3 w-[150px] md:w-[200px] lg:w-[200px] transform transition-transform duration-500 hover:scale-110"
                     >
                         <img
                             src={servicio.image}
@@ -93,10 +93,10 @@ const Servicios = () => {
         </div>
 
         {/* Servicios y Reparaciones */}
-        <div className="bg-aaca-medium-gray py-16">
+        <div className="bg-aaca-medium-gray py-16 px-6">
             {/* Title */}
             <div className="text-center mb-10">
-                <h2 className="text-aaca-blue font-bold text-5xl">SERVICIOS Y REPARACIONES</h2>
+                <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">SERVICIOS Y REPARACIONES</h2>
             </div>
 
             {/* Grid */}
