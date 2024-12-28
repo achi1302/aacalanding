@@ -50,7 +50,7 @@ const Inicio = () => {
   return (
     <div>
         {/* Carousel */}
-        <div className="relative w-full h-[800px] overflow-hidden shadow-md">
+        <div className="relative w-full h-[400px] md:h-[600px] lg:h-[800px] overflow-hidden shadow-md">
 
             {/* Image */}
             <div className="relative w-full h-full">
@@ -67,7 +67,7 @@ const Inicio = () => {
             </div>
         
             {/* Texts */}
-            <div className="absolute bottom-4 left-[550px] w-full h-full flex flex-col justify-center items-start">
+            <div className="absolute bottom-4 left-0 right-0 w-full h-full flex flex-col justify-center items-center">
                 {slides.map((slide, index) =>
                     <div
                         key={index}
@@ -76,11 +76,11 @@ const Inicio = () => {
                         }`}
                     >
                         {/* Sub */}
-                        <h1 className="max-w-[975px] text-white font-bold text-2xl mb-4">
+                        <h1 className="hidden md:block max-w-[300px] md:max-w-[600px] lg:max-w-[975px] text-white font-bold text-lg md:text-xl lg:text-2xl mb-2 md:mb-4">
                             {slide.subtitle}
                         </h1>
                         {/* Title */}
-                        <h1 className="max-w-[800px] text-white font-bold text-5xl">
+                        <h1 className="max-w-[400px] md:max-w-[600px] lg:max-w-[800px] text-white font-bold text-3xl md:text-4xl lg:text-5xl">
                             {slide.title}
                         </h1>
                     </div> 
@@ -183,11 +183,11 @@ const Inicio = () => {
         </div>
 
         {/* Contacto Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between bg-white pt-16 px-60">
+        <div className="flex flex-col md:flex-row items-center justify-center bg-white pt-16 px-4 md:px-16 lg:px-32 xl:px-60">
             {/* Text */}
-            <div className="w-full md:w-1/2 mb-8 md:mb-0 items-center">
+            <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
                 <p className="text-aaca-green text-lg uppercase font-medium mb-2">Contacto</p>
-                <h2 className="text-aaca-blue text-5xl font-bold leading-tight mb-4">LOREM IPSUM DOLOR AMET, CO</h2>
+                <h2 className="text-aaca-blue text-3xl md:text-5xl font-bold leading-tight mb-4">LOREM IPSUM DOLOR AMET, CO</h2>
                 <p className="text-black font-normal mb-6">
                     Lorem ipsum odor amet, consectetur adipiscing elit. Imperdiet curabitur consequat risus
                     felis interdum euismod posuere, risus aenean. Effictur consectetur neque nostra interdum
@@ -201,7 +201,7 @@ const Inicio = () => {
             </div>
 
             {/* Icons */}    
-            <div className="w-full md:w-1/2 flex justify-center relative">
+            <div className="w-full md:w-1/2 flex justify-center relative hidden md:flex">
                 <div className="relative">
                     {/* Top Icon */}
                     <div className="absolute -bottom-1">
