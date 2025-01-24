@@ -3,6 +3,7 @@ import {User, Wifi, Puzzle, Wrench, CarFront} from "lucide-react"
 import car from "../assets/bmw.jpg"
 import truck from "../assets/truck.jpg"
 import tractor from "../assets/tractor.jpg"
+import nosotros from "../assets/nosotros.jpg"
 
 const Inicio = () => {
     const slides = [
@@ -102,8 +103,8 @@ const Inicio = () => {
         {/* Servicios Section */}
         <div className="relative flex flex-col items-center px-4 py-16 bg-white space-y-16">
             <div className="text-center">
-                <p className="text-aaca-green text-lg uppercase font-medium">Lorem ipsum dolot sit em</p>
-                <h2 className="text-aaca-blue text-5xl font-bold">LOREM IPSUM DOLOR SIT EM</h2>
+                <p className="text-aaca-green text-lg uppercase font-medium mb-5">Somos expertos en aire acondicionado</p>
+                <h2 className="text-aaca-blue text-5xl font-bold uppercase">Ofrecemos soluciones de alta calidad</h2>
             </div>
 
             <div className="relative flex flex-wrap justify-center items-center gap-8 w-full">
@@ -128,10 +129,10 @@ const Inicio = () => {
 
             {/* Bottom Text */}
             <div className="text-center max-w-2xl">
-                <h2 className="text-aaca-blue text-5xl font-bold">
-                    LOREM IPSUM DOLOR SIT EMET, CONSECTETUR ADIPISCING ELIT, SED
+                <h2 className="text-aaca-blue text-5xl font-bold mb-8 uppercase">
+                    ¿quiere saber más acerca de nuestros servicios?
                 </h2>
-                <p className="text-aaca-green text-lg font-medium mt-2 mb-10">
+                <p className="text-aaca-green text-lg font-medium  mb-10">
                     Conoce nuestro portafolio y pongámonos en contacto para encontrar la solución ideal hecha a tu medida.
                 </p>
 
@@ -148,22 +149,35 @@ const Inicio = () => {
 
         {/* Nosotros Section */}
         <div id="nosotros" className="flex items-center justify-center bg-aaca-medium-gray py-16 px-8">
-            <div className="flex flex-col md:flex-row items-center md:items-start bg-white shadow-lg rounded-lg w-full max-w-5xl">
+            <div className="flex flex-col md:flex-row items-center md:items-start bg-white shadow-lg rounded-lg w-full max-w-[1315px] px-8">
                 
-                {/* Backgrounds */}
-                <div className="relative w-full md:w-1/2 h-80 flex items-center justify-center">
-                    <div className="absolute w-64 h-64 bg-aaca-medium-gray rounded-xl"></div>
+                {/* Image Container */}
+                <div 
+                    className="relative w-full md:w-1/2 flex items-center justify-center hidden md:flex"
+                    style={{
+                        height: '750px'
+                    }}
+                >
+                    <img 
+                        src={nosotros}
+                        alt="Nosotros"
+                        className="object-cover rounded-xl"
+                        style={{
+                            width: '535px',
+                            height: '615px'
+                        }}
+                    />
                 </div>
 
                 {/* Text */}
-                <div className="w-full md:w-1/2 px-8 py-8">
-                    <h2 className="text-2xl font-bold text-black mb-4">NOSOTROS</h2>
-                    <p className="text-black font-medium mb-4">
+                <div className="w-full md:w-1/2 px-8 py-16 flex flex-col justify-center">
+                    <h2 className="text-3xl md:text-5xl lg:text-5xl font-bold text-black mb-4">NOSOTROS</h2>
+                    <p className="text-black font-medium mb-4 text-xl md:text-2xl lg:text-2xl">
                         Establecidos en Mexicali, Baja California desde el año 1998 y hoy líderes en el área de
                         la distribución de refacciones nuevas de reemplazo para aire acondicionado automotriz
                         y de uso pesado, para el público general y talleres.
                     </p>
-                    <p className="text-black font-medium mb-6">
+                    <p className="text-black font-medium mb-6 text-xl md:text-2xl lg:text-2xl">
                         Contamos con el mayor inventario en la región listo para surtirlo al momento; así mismo
                         contamos con taller de servicio, mantenimiento y reparación del A/C de su auto,
                         tractocamión y/o maquinaria para brindarle una mejor experiencia y trato.
@@ -178,10 +192,9 @@ const Inicio = () => {
             <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
                 <p className="text-aaca-green text-lg uppercase font-medium mb-2"></p>
                 <h2 className="text-aaca-blue text-3xl md:text-5xl font-bold leading-tight mb-4">CONTÁCTANOS</h2>
-                <p className="text-black font-normal mb-6">
-                    Lorem ipsum odor amet, consectetur adipiscing elit. Imperdiet curabitur consequat risus
-                    felis interdum euismod posuere, risus aenean. Effictur consectetur neque nostra interdum
-                    congue himenaeos libero. Cubilia luctus morbi cubilia non pharetra id eget phar.
+                <p className="text-black font-normal mb-6 text-2xl">
+                    ¿Tienes preguntas o necesitas ayuda? ¡Contáctanos hoy mismo! Nuestro equipo 
+                    está aquí para ayudarte a encontrar la solución perfecta.
                 </p>
                 <a href="/contacto">
                     <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">

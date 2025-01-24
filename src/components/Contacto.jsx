@@ -1,5 +1,5 @@
 import {MapPin, Smartphone} from "lucide-react"
-import contact from "../assets/contact.jpg"
+import phones from "../assets/phones.jpg"
 
 const Contacto =() => {
   return (
@@ -10,7 +10,7 @@ const Contacto =() => {
             <div
                 className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                 style={{
-                    backgroundImage:  `url(${contact})`,
+                    backgroundImage:  `url(${phones})`,
                     filter: "brightness(0.5)"
                 }}
             ></div>
