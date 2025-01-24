@@ -75,11 +75,9 @@ const Inicio = () => {
                             currentIndex === index ? 'opacity-100' : 'opacity-0'
                         }`}
                     >
-                        {/* Sub */}
                         <h1 className="hidden md:block max-w-[300px] md:max-w-[600px] lg:max-w-[975px] text-white font-bold text-lg md:text-xl lg:text-2xl mb-2 md:mb-4">
                             {slide.subtitle}
                         </h1>
-                        {/* Title */}
                         <h1 className="max-w-[400px] md:max-w-[600px] lg:max-w-[800px] text-white font-bold text-3xl md:text-4xl lg:text-5xl">
                             {slide.title}
                         </h1>
@@ -103,31 +101,23 @@ const Inicio = () => {
         
         {/* Servicios Section */}
         <div className="relative flex flex-col items-center px-4 py-16 bg-white space-y-16">
-
-            {/* Top Section Text */}
             <div className="text-center">
                 <p className="text-aaca-green text-lg uppercase font-medium">Lorem ipsum dolot sit em</p>
                 <h2 className="text-aaca-blue text-5xl font-bold">LOREM IPSUM DOLOR SIT EM</h2>
             </div>
 
-            {/* Middle Section */}
             <div className="relative flex flex-wrap justify-center items-center gap-8 w-full">
                 {/* Boxes */}
                 <a href="/servicios">
                     <div className="flex flex-wrap justify-center gap-8 relative z-10">
-                        {/* Partes */}
                         <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
                             <Puzzle size={75} className="text-aaca-blue mb-4" />
                             <h3 className="text-aaca-blue text-4xl font-bold mb-2">Partes</h3>
                         </div>
-
-                        {/* Servicios */}
                         <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
                             <Wrench size={75} className="text-aaca-blue mb-4" />
                             <h3 className="text-aaca-blue text-4xl font-bold mb-2">Servicios</h3>
                         </div>
-
-                        {/* Reparaciones */}
                         <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
                             <CarFront size={75} className="text-aaca-blue mb-4" />
                             <h3 className="text-aaca-blue text-4xl font-bold mb-2">Reparaciones</h3>
@@ -186,8 +176,8 @@ const Inicio = () => {
         <div className="flex flex-col md:flex-row items-center justify-center bg-white pt-16 px-4 md:px-16 lg:px-32 xl:px-60">
             {/* Text */}
             <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-                <p className="text-aaca-green text-lg uppercase font-medium mb-2">Contacto</p>
-                <h2 className="text-aaca-blue text-3xl md:text-5xl font-bold leading-tight mb-4">LOREM IPSUM DOLOR AMET, CO</h2>
+                <p className="text-aaca-green text-lg uppercase font-medium mb-2"></p>
+                <h2 className="text-aaca-blue text-3xl md:text-5xl font-bold leading-tight mb-4">CONTÁCTANOS</h2>
                 <p className="text-black font-normal mb-6">
                     Lorem ipsum odor amet, consectetur adipiscing elit. Imperdiet curabitur consequat risus
                     felis interdum euismod posuere, risus aenean. Effictur consectetur neque nostra interdum
@@ -203,15 +193,12 @@ const Inicio = () => {
             {/* Icons */}    
             <div className="w-full md:w-1/2 flex justify-center relative hidden md:flex">
                 <div className="relative">
-                    {/* Top Icon */}
                     <div className="absolute -bottom-1">
                         <User size={180} className="text-aaca-blue" />
                     </div>
-                    {/* Sound Waves */}
                     <div className="absolute -left-32 -top-12 transform rotate-45">
                         <Wifi size={180} className="text-aaca-green" />
                     </div>
-                    {/* Bottom Figure */}
                     <div className="absolute top-0 right-20">
                         <User size={180} className="text-aaca-blue" />
                     </div>

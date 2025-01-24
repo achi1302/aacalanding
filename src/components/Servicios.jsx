@@ -31,17 +31,17 @@ const Servicios = () => {
     const serviciosReparaciones = [
         {
             image: [serviciosac], 
-            title: "SERVICIOS DE AIRE ACONDICIONADO",
+            title: "SERVICIO A/C AUTOMOTRIZ",
             description: "Descripción adicional sobre el servicio."
         },
         {
             image: [mangeras], 
-            title: "FABRICACIONES DE MANGUERAS",
+            title: "FABRICACIÓN DE MANGUERAS A/C    ",
             description: "Descripción adicional sobre el servicio."
         },
         {
             image: [baleros], 
-            title: "CAMBIOS DE BALÉROS/COMPRESOR",
+            title: "CAMBIO DE BALERO A COMPRESOR A/C",
             description: "Descripción adicional sobre el servicio."
         }
     ]
@@ -67,10 +67,9 @@ const Servicios = () => {
 
         {/* Grid Section */}
         <div className="p-12 flex flex-col items-center">
-            {/* Header */}
             <div className="text-center mb-6">
-                <p className="text-aaca-green font-medium text-lg md:text-xl lg:text-xl">NUESTROS SERVICIOS</p>
-                <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">REFACCIONES</h2>
+                
+                <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">VENTA DE REFRACCIONES</h2>
             </div>
             {/* Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10 max-w-[1125px]">
@@ -94,11 +93,9 @@ const Servicios = () => {
 
         {/* Servicios y Reparaciones */}
         <div className="bg-aaca-medium-gray py-16 px-6">
-            {/* Title */}
             <div className="text-center mb-10">
                 <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">SERVICIOS Y REPARACIONES</h2>
             </div>
-
             {/* Grid */}
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-wrap justify-center gap-12">
@@ -114,7 +111,7 @@ const Servicios = () => {
                         >
                             {/* Visible */}
                             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                                <h3 className="text-white font-bold text-4xl text-center">
+                                <h3 className="text-white font-bold text-4xl text-center w-3/4">
                                     {servicio.title}
                                 </h3>
                             </div>

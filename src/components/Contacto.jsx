@@ -28,8 +28,6 @@ const Contacto =() => {
         {/* Contacto Section */}
         <div className="container mx-auto px-4 pt-10">
             <h2 className="text-5xl font-bold text-center text-aaca-blue mb-10">CONTÁCTANOS</h2>
-
-            {/* MAIN */}
             <div className="flex flex-col lg:flex-row justify-center gap-0">
                 {/* Map */}
                 <div className="flex-1">
