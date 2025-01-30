@@ -114,7 +114,7 @@ const Inicio = () => {
 
                 <div className="relative flex flex-wrap justify-center items-center gap-8 w-full">
                     {/* Boxes */}
-                    <a href="/#/servicios">
+                    <a href="/aacalanding/#/servicios">
                         <div className="flex flex-wrap justify-center gap-8 relative z-10">
                             <div className="flex flex-col items-center justify-center bg-aaca-medium-gray p-8 rounded-lg shadow-sm w-72 transform transition-transform duration-500 hover:scale-110">
                                 <Puzzle size={75} className="text-aaca-blue mb-4" />
@@ -142,7 +142,7 @@ const Inicio = () => {
                     </p>
 
                     {/* Button */}
-                    <a href="/#/servicios">
+                    <a href="/aacalanding/#/servicios">
                         <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
                             SERVICIOS
                         </button>
@@ -201,7 +201,7 @@ const Inicio = () => {
                         ¿Tienes preguntas o necesitas ayuda? ¡Contáctanos hoy mismo! Nuestro equipo 
                         está aquí para ayudarte a encontrar la solución perfecta.
                     </p>
-                    <a href="/#/contacto">
+                    <a href="/aacalanding/#/contacto">
                         <button className="bg-aaca-green text-white py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110">
                             CONTACTO
                         </button>
