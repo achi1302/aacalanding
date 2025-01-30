@@ -11,8 +11,8 @@ const Navbar = () => {
     }
 
     const handleNavClick = (href) => {
-        if (href.startsWith("/accalanding/#/#")) {
-          const sectionId = href.substring(16) // Remove `#` to get the ID
+        if (href.startsWith("/aacalanding/#/#")) {
+          const sectionId = href.substring(16) 
           const section = document.getElementById(sectionId);
     
           if (section) {
