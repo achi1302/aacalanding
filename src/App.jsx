@@ -10,6 +10,7 @@ import Servicios from './components/Servicios'
 export const App = () => {
 
   return (
+    <div className='container'>
       <Router basename='/aacalanding'>
         <Navbar />
         <Routes>
@@ -19,6 +20,7 @@ export const App = () => {
         </Routes>
         <Footer />
       </Router>
+    </div>
   )
 }
 
