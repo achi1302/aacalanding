@@ -1,8 +1,40 @@
 import {MapPin, Smartphone} from "lucide-react"
 import {Helmet} from "react-helmet"
+import { useRef, useState } from "react"
+import emailjs from "emailjs-com"
 import phones from "../assets/phones.jpg"
 
 const Contacto =() => {
+
+    const form = useRef()
+    const [isSending, setIsSending] = useState(false)
+    const [message, setMessage] = useState("")
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+        setIsSending(true)
+        setMessage("")
+
+        emailjs
+      .sendForm(
+        "service_ip7x2fm", // Service ID 
+        "template_outjkoo", // Template ID
+        form.current,
+        "AnMHiTtLNpK73Zr6h" // Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Success:", result.text);
+          setMessage("¡Mensaje enviado correctamente!")
+          form.current.reset();
+        },
+        (error) => {
+          console.log("Error:", error.text)
+          setMessage("Hubo un error al enviar el mensaje. Inténtalo de nuevo.")
+        }
+      )
+      .finally(() => setIsSending(false))
+    }
   return (
     <>
         <Helmet>
@@ -46,39 +78,53 @@ const Contacto =() => {
                     {/* Form */}
                     <div className="flex-1 bg-aaca-blue text-white p-6 rounded-lg shadow-lg">
                         <h3 className="text-2xl font-bold mb-4 text-center">Compártenos tus datos y conversemos</h3>
-                        <form className="space-y-4">
+                        <form className="space-y-4" ref={form} onSubmit={sendEmail}>
                             <input
-                                type="text"
-                                placeholder="Nombre"
-                                className="w-full p-3 rounded-lg text-black"
+                               type="text"
+                               name="nombre"
+                               placeholder="Nombre"
+                               className="w-full p-3 rounded-lg text-black"
+                               required
                             />
                             <div className="flex gap-4">
                                 <input 
                                     type="text"
+                                    name="telefono"
                                     placeholder="Teléfono"
                                     className="w-1/2 p-3 rounded-lg text-black"
+                                    required
                                 />
                                 <input 
                                     type="email"
+                                    name="email"
                                     placeholder="Correo Electrónico"
                                     className="w-1/2 p-3 rounded-lg text-black"
+                                    required
                                 />
                             </div>
                             <textarea
+                                name="mensaje"
                                 placeholder="Mensaje"
                                 className="w-full p-3 rounded-lg h-52 text-black"
+                                required
                             ></textarea>
                             <div className="flex items-center justify-between">
                                 <button
                                     type="submit"
                                     className="bg-aaca-green text-white w-40 py-4 px-6 rounded-lg font-bold shadow transform transition-transform duration-500 hover:scale-110"
+                                    disabled={isSending}
                                 >
-                                    ENVIAR
+                                    {isSending ? "Enviando..." : "ENVIAR"}
                                 </button>
                                 <p className="text-center font-bold text-base md:text-lg lg:text-xl w-80 mr-6 md:mr-20 lg:mr-20 transform transition-transform duration-500 hover:scale-110">
                                     ¡Nos puede contactar por teléfono, correo o whatsapp!
                                 </p>
                             </div>
+                            {message && (
+                                <p className={`text-center font-bold mt-4 ${message.includes("error") ? "text-red-500" : "text-green-500"}`}>
+                                    {message}
+                                </p>
+                            )}
                         </form>
                     </div>
                 </div>
