@@ -1,6 +1,6 @@
 export const navItems = [
-    { label: "INICIO", href: "/#/" },
-    { label: "SERVICIOS", href: "/#/servicios" },
+    { label: "INICIO", href: "/aacalanding" },
+    { label: "SERVICIOS", href: "/aacalanding/#/contacto" },
     { label: "NOSOTROS", href: "/#/#nosotros" },
-    { label: "CONTACTO", href: "/#/contacto" },
+    { label: "CONTACTO", href: "/aacalanding/#/contacto" },
 ]
