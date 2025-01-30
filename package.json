@@ -1,7 +1,7 @@
 {
   "name": "aacalanding",
   "homepage": "https://achi1302.github.io/aacalanding",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
