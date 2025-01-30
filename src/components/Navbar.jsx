@@ -11,13 +11,15 @@ const Navbar = () => {
     }
 
     const handleNavClick = (href) => {
-        if (href.startsWith("#")) {
-          const sectionId = href.substring(1) // Remove `#` to get the ID
+        if (href.startsWith("/#/#")) {
+          const sectionId = href.substring(4) // Remove `#` to get the ID
           const section = document.getElementById(sectionId);
     
           if (section) {
             section.scrollIntoView({ behavior: "smooth" });
           }
+        } else {
+            window.location.href = href;
         }
     
         setMobileDrawerOpen(false); // Close the mobile drawer
