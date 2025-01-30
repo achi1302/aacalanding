@@ -10,15 +10,15 @@ import Servicios from './components/Servicios'
 export const App = () => {
 
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Inicio />} />
-        <Route path='/contacto' element={<Contacto />} />
-        <Route path='/servicios' element={<Servicios />} />
-      </Routes>
-      <Footer />
-    </Router>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Inicio />} />
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/servicios' element={<Servicios />} />
+        </Routes>
+        <Footer />
+      </Router>
   )
 }
 
