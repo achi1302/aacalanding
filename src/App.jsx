@@ -10,10 +10,10 @@ import Servicios from './components/Servicios'
 export const App = () => {
 
   return (
-      <Router>
+      <Router basename='/aacalanding'>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Inicio />} />
+          <Route exact path='/aacalanding' element={<Inicio />} />
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/servicios' element={<Servicios />} />
         </Routes>
