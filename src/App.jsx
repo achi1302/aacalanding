@@ -13,9 +13,9 @@ export const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact='/' element={<Inicio />} />
-          <Route path='/contacto' element={<Contacto />} />
-          <Route path='/servicios' element={<Servicios />} />
+          <Route path='/aacalanding' element={<Inicio />} />
+          <Route path='/aacalanding/contacto' element={<Contacto />} />
+          <Route path='/aacalanding/servicios' element={<Servicios />} />
         </Routes>
         <Footer />
       </Router>
