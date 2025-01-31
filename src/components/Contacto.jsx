@@ -17,10 +17,10 @@ const Contacto =() => {
 
         emailjs
       .sendForm(
-        "service_ip7x2fm", // Service ID 
-        "template_outjkoo", // Template ID
+        "service_yb2ubj9", // Service ID 
+        "template_buaua1w", // Template ID
         form.current,
-        "AnMHiTtLNpK73Zr6h" // Public Key
+        "DFY3t3PF1ZLMdQjJn" // Public Key
       )
       .then(
         (result) => {

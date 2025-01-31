@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="container px-4 mx-auto relative text-base ">
             <div className="flex justify-between items-center ">
                 <div className="flex items-center flex-shrink-0 ">
-                    <a href="/">
+                    <a href="/aacalanding/">
                         <img className="h-20 w-64" src={logo} alt="logo" />
                     </a>
                 </div>
