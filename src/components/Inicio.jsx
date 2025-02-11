@@ -84,7 +84,7 @@ const Inicio = () => {
                             <h1 className="hidden md:block max-w-[300px] md:max-w-[600px] lg:max-w-[975px] text-white font-bold text-lg md:text-xl lg:text-2xl mb-2 md:mb-4">
                                 {slide.subtitle}
                             </h1>
-                            <h1 className="max-w-[400px] md:max-w-[600px] lg:max-w-[800px] text-white font-bold text-3xl md:text-4xl lg:text-5xl">
+                            <h1 className="max-w-[350px] md:max-w-[600px] lg:max-w-[800px] text-white font-bold text-3xl md:text-4xl lg:text-5xl">
                                 {slide.title}
                             </h1>
                         </div> 
