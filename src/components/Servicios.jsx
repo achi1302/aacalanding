@@ -78,7 +78,7 @@ const Servicios = () => {
                     <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">VENTA DE REFRACCIONES</h2>
                 </div>
                 {/* Grid */}
-                <a href="/aacalanding/#/contacto">
+                <a href="/contacto">
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10 max-w-[1125px]">
                         {servicios.map((servicio, index) => (
                             <div
@@ -105,7 +105,7 @@ const Servicios = () => {
                     <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">SERVICIOS Y REPARACIONES</h2>
                 </div>
                 {/* Grid */}
-                <a href="/aacalanding/#/contacto">
+                <a href="/contacto">
                     <div className="max-w-7xl mx-auto">
                         <div className="flex flex-wrap justify-center gap-12">
                             {serviciosReparaciones.map((servicio, index) => (
@@ -150,7 +150,7 @@ const Servicios = () => {
             <div className="text-center pt-16">
                 <h2 className="text-aaca-blue font-bold text-5xl mb-6">¿NECESITAS AYUDA?</h2>
                 <p className="text-aaca-green font-medium text-xl mb-6">¡Contáctanos!</p>
-                <a href="/aacalanding/#/contacto">
+                <a href="/contacto">
                     <button className="bg-aaca-green text-white font-bold px-6 py-4 rounded-lg shadow transform transition-transform duration-500 hover:scale-110">
                         CONTACTO
                     </button>

@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
        
         <div className="flex flex-col items-center justify-center">
-            <a href="/aacalanding/"><img className="h-20 w-64 mx-auto md:mx-0" src={logowhite} alt="logowhite" /></a>
+            <a href="/"><img className="h-20 w-64 mx-auto md:mx-0" src={logowhite} alt="logowhite" /></a>
         </div>
 
         
-        <a href="/aacalanding/#/contacto">
+        <a href="/contacto">
           <div className="flex flex-col items-center justify-center text-white font-bold hover:text-aaca-green mt-2">
             <p>Calle de la Industria #218-B</p>
             <p>Col. Industrial C.P.21010</p>

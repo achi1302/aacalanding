@@ -11,15 +11,13 @@ const Navbar = () => {
     }
 
     const handleNavClick = (href) => {
-        if (href.startsWith("/aacalanding/#/#")) {
-          const sectionId = href.substring(16) 
+        if (href.startsWith("#")) {
+          const sectionId = href.substring(1) 
           const section = document.getElementById(sectionId);
     
           if (section) {
             section.scrollIntoView({ behavior: "smooth" });
           }
-        } else {
-            window.location.href = href;
         }
     
         setMobileDrawerOpen(false); // Close the mobile drawer
@@ -30,7 +28,7 @@ const Navbar = () => {
         <div className="container px-4 mx-auto relative text-base ">
             <div className="flex justify-between items-center ">
                 <div className="flex items-center flex-shrink-0 ">
-                    <a href="/aacalanding/">
+                    <a href="/">
                         <img className="h-20 w-64" src={logo} alt="logo" />
                     </a>
                 </div>
