@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet"
-import contact from "../assets/contact.jpg"
 import compresornuevo from "../assets/compresornuevo.jpg"
 import condesador from "../assets/condesador.png"
 import evaporador from "../assets/evaparador.jpg"
