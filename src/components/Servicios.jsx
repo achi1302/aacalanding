@@ -74,7 +74,7 @@ const Servicios = () => {
             {/* Grid Section */}
             <div className="p-12 flex flex-col items-center">
                 <div className="text-center mb-6">
-                    <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">VENTA DE REFRACCIONES</h2>
+                    <h2 className="text-aaca-blue font-bold text-4xl md:text-5xl lg:text-5xl">VENTA DE REFACCIONES</h2>
                 </div>
                 {/* Grid */}
                 <a href="/contacto">
